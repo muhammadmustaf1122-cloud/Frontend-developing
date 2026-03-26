@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Header Example</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+
+            <div class="header__logo"><img src="./images/Logo.png" alt="logo.png"></div>
+
+            <div class="header__right">
+                <nav class="header__nav" id="mainNav">
+
+                    <ul class="header__menu">
+
+                        <li class="has-dropdown">
+                            <div class="menu__link">
+                                <p>Products</p> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                    </svg></span>
+                            </div>
+                            <ul class="dropdown">
+                                <li><a href="#">Task Management</a></li>
+                                <li><a href="#">Document Collaboration</a></li>
+                                <li><a href="#">Real-time Editing</a></li>
+                                <li><a href="#">File Sharing</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <div class="menu__link">
+                                <p>Solutions</p> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                    </svg></span>
+                            </div>
+                            <ul class="dropdown">
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Sales</a></li>
+                                <li><a href="#">Engineering</a></li>
+                                <li><a href="#">HR</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <div class="menu__link">
+                                <p>Resources</p> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                    </svg></span>
+                            </div>
+                            <ul class="dropdown">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Guides</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                                <li><a href="#">Webinars</a></li>
+                            </ul>
+                        </li>
+
+                        <div class="menu__link">
+                            <p>Pricing</p> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                </svg></span>
+                        </div>
+
+                    </ul>
+                    <div class="header__actions-mobile-version">
+                        <a href="#" class="header__btn header__btn--login">Login</a>
+                        <a href="#" class="header__btn header__btn--primary">
+                            Try Whitepace
+                            <svg viewBox="0 -960 960 960" fill="#e3e3e3">
+                                <path d="M630-444H192v-72h438L429-717l51-51 288 288-288 288-51-51 201-201Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </nav>
+
+                <div class="header__actions">
+                    <a href="#" class="header__btn header__btn--login">Login</a>
+                    <a href="#" class="header__btn header__btn--primary">
+                        Try Whitepace
+                        <svg viewBox="0 -960 960 960" fill="#e3e3e3">
+                            <path d="M630-444H192v-72h438L429-717l51-51 288 288-288 288-51-51 201-201Z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero_parent">
+                <div class="hero_child">
+                    <h1>Get More Done with Whitepace</h1>
+                    <p>Project management software that enables your teams to collaborate, plan, analyze and manage
+                        everyday tasks</p>
+                    <button class="btn">Try Whitepace free</button>
+                </div>
+                <div class="hero_child"><img
+                        src="https://www.marketerscenter.com/blog/wp-content/uploads/2023/05/VNU_M577_03-1024x683.png"
+                        alt="img.png"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="features-parent">
+                <div class="features-child">
+                    <div class="features-child__item">
+                        <h2>Project Management</h2>
+                        <p>Images, videos, PDFs and audio files are supported. Create math expressions and diagrams
+                            directly from the app. Take photos with the mobile app and save them to a note.</p>
+                        <button class="btn">Get Started</button>
+                    </div>
+                    <div class="features-child__item"><img
+                            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHHaNjG3f8_0SnxYV7UEuLMo4WDBcycclwOfQYg6E1k81K5lmk"
+                            alt="img.png"></div>
+                </div>
+                <div class="features-child">
+                    <div class="features-child__item"><img src="./images/Work Together Image.png" alt="img.png"></div>
+                    <div class="features-child__item">
+                        <h2>Work together</h2>
+                        <p>With whitepace, share your notes with your colleagues and collaborate on them.
+                            You can also publish a note to the internet and share the URL with others.</p>
+                        <button class="btn">
+                            <span class="btn-text">Try it now </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features-02">
+        <div class="container">
+            <div class="features-02__parent">
+                <div class="features-02__child">
+                    <h2>Use as Extension</h2>
+                    <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take
+                        screenshots as notes.</p>
+                    <button class="btn">Lets Goo</button>
+                </div>
+                <div class="features-02__child"><img
+                        src="https://www.marketerscenter.com/blog/wp-content/uploads/2023/05/VNU_M577_03-1024x683.png"
+                        alt="img.png"></div>
+            </div>
+        </div>
+    </section>
+    <section class="features-03">
+        <div class="container">
+            <div class="features-03__parent">
+                <div class="features-03__child">
+                    <img src="https://www.marketerscenter.com/blog/wp-content/uploads/2023/05/VNU_M577_03-1024x683.png"
+                        alt="img.png">
+                </div>
+                <div class="features-03__child">
+                    <h2>Customise it to your needs</h2>
+                    <p>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown).
+                        Or create your own scripts and plugins using the Extension API.</p>
+                    <button class="btn">Lets Goo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-04">
+        <div class="container">
+            <div class="features-04__parent">
+                <div class="features-04__child">
+                    <div class="f04-heading">
+                        <h2>Choose Your Plan</h2>
+                    </div>
+                    <div class="f04-para">
+                        <p>Whether you want to organized keep your personal life on track and boost workplace
+                            producticity.Evernote has the right plan for you. </p>
+                    </div>
+                </div>
+                <div class="features-04__child">
+                    <div class="plans plan01">
+                        <div class="plans__text">
+                            <div class="plans__text-title">
+
+                                <h2>Free</h2>
+
+                            </div>
+                            <div class="plans__text-price" style=" font-weight: 600;">
+
+                                <h2>$0</h2>
+
+                            </div>
+                            <div class="plans__text-description">
+                                <p>Capture ideas and find them quickly</p>
+                            </div>
+                        </div>
+                        <div class="plans__bullet-points">
+                            <ul class="plans__bullet-list">
+                                <li class="plans__bullet-item  white-icon">Sync unlimited devices</li>
+                                <li class="plans__bullet-item  white-icon">10 GB monthly uploads</li>
+                                <li class="plans__bullet-item  white-icon">200 MB max. note size</li>
+                                <li class="plans__bullet-item  white-icon">Customize Home dashboard and access extra
+                                    widgets</li>
+                                <li class="plans__bullet-item  white-icon">Connect primary Google Calendar account</li>
+                                <li class="plans__bullet-item  white-icon">Add due dates, reminders, and notifications
+                                    to your tasks
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="plans__button-wrapper"><button>Get Started</button></div>
+                    </div>
+                    <div class="plans plan02">
+                        <div class="plans__text">
+                            <div class="plans__text-title">
+
+                                <h2>Personal</h2>
+
+                            </div>
+                            <div class="plans__text-price" style="font-weight: 600;">
+
+                                <h2>$11.99</h2>
+
+                            </div>
+                            <div class="plans__text-description">
+                                <p>Keep home and family on track</p>
+                            </div>
+                        </div>
+
+                        <div class="plans__bullet-points">
+                            <ul class="plans__bullet-list">
+                                <li class="plans__bullet-item">Sync unlimited devices</li>
+                                <li class="plans__bullet-item">10 GB monthly uploads</li>
+                                <li class="plans__bullet-item">200 MB max. note size</li>
+                                <li class="plans__bullet-item">Customize Home dashboard and access extra widgets</li>
+                                <li class="plans__bullet-item">Connect primary Google Calendar</li>
+                                <li class="plans__bullet-item">Add due dates, reminders, and notifications to your tasks
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="plans__button-wrapper">
+                            <button class="btn">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="plans plan03">
+                        <div class="plans__text">
+                            <div class="plans__text-title">
+
+                                <h2>Organization</h2>
+
+                            </div>
+                            <div class="plans__text-price" style="font-weight: 600;">
+
+                                <h2>$49.99</h2>
+
+                            </div>
+                            <div class="plans__text-description">
+                                <p>Capture ideas and find them quickly</p>
+                            </div>
+                        </div>
+
+                        <div class="plans__bullet-points">
+                            <ul class="plans__bullet-list">
+                                <li class="plans__bullet-item  white-icon">Sync unlimited devices</li>
+                                <li class="plans__bullet-item  white-icon">10 GB monthly uploads</li>
+                                <li class="plans__bullet-item  white-icon">200 MB max. note size</li>
+                                <li class="plans__bullet-item  white-icon">Customize Home dashboard and access extra
+                                    widgets</li>
+                                <li class="plans__bullet-item  white-icon">Add due dates, reminders, and notifications
+                                    to your tasks
+                                <li class="plans__bullet-item  white-icon">Connect primary Google Calendar account</li>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="plans__button-wrapper">
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features-05">
+        <div class="container">
+            <div class="features-05_parent">
+                <div class="features-05_child">
+                    <div class="heading">
+
+                        <div class="textline1">
+                            <h2>Your Work Everywhere You Are </h2>
+                        </div>
+                        <div class="textline2">
+                            <p>Access your notes from your computer, phone or tablet by synchronising with various
+                                services, including whitepace, Dropbox and OneDrive. The app is available on Windows,
+                                macOS, Linux, Android and iOS. A terminal app is also available!</p>
+                        </div>
+                    </div>
+                    <button class="btn">Try Taskey </button>
+
+                </div>
+                <div class="feature-05-child"> <img src="https://daafkventures.com/wp-content/uploads/2025/04/mediawowfactor-dm-2.png-1.webp" alt="img.png"></div>
+               
+            </div>
+        </div>
+    </section>
+    <section class="features-06">
+        <div class="container">
+            <div class="features-06__parent">
+                <div class="features-06__child">
+                    <h2>100% Your Data</h2>
+                    <p>The app is open source and your notes are saved to an open format, so you'll always have access
+                        to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself
+                        can access them.</p>
+                    <button class="btn">Read More </button>
+                </div>
+                <div class="features-06__child"><img src="./images/Element3.png" alt="img.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-07">
+        <div class="container">
+            <div class="feature-07_parent">
+                <div class="feature-07_child1">
+
+                    <h2>Our Sponsers </h2>
+
+                </div>
+                <div class="feature-07_child2">
+                    <div class="feature-07_child2_inner">
+                        <div class="feature-07_subchild"><img src="./images/Apple.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Microsoft.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Slack.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Google.png"></div>
+
+                        <div class="feature-07_subchild"><img src="./images/Apple.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Microsoft.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Slack.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Google.png"></div>
+
+                        <div class="feature-07_subchild"><img src="./images/Apple.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Microsoft.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Slack.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Google.png"></div>
+
+                        <div class="feature-07_subchild"><img src="./images/Apple.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Microsoft.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Slack.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Google.png"></div>
+
+                        <div class="feature-07_subchild"><img src="./images/Apple.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Microsoft.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Slack.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Google.png"></div>
+
+                        <div class="feature-07_subchild"><img src="./images/Apple.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Microsoft.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Slack.png"></div>
+                        <div class="feature-07_subchild"><img src="./images/Google.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-09">
+        <div class="container">
+            <div class="feature-09_parent">
+                <div class="feature-09_image">
+                    <img src="./images/Apps.png" alt="Favorite Apps">
+                </div>
+                <div class="feature-09_content">
+                    <h2>Work with Your <span>Favorite Apps Using</span> whitepace</h2>
+                    <p>Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to
+                        have all the tools you need for your project success.</p>
+
+                    <button class="btn">Read More </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-10">
+        <div class="container">
+
+            <h2 class="section-title">
+                What Our Clients Says
+            </h2>
+
+            <div class="testimonial-viewport">
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card active">
+                        <div class="quote2"></div>
+                        <p class="testimonial-text">Whitepate is designed as a collaboration tool for businesses that is
+                            a full project management solution.</p>
+                        <div class="line"></div>
+                        <div class="client-info">
+                            <img src="./images/Avater1.png" alt="client">
+                            <div>
+                                <h4>Oberon Shaw, MCH</h4>
+                                <span>Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card blue">
+                        <div class="quote"></div>
+                        <p class="testimonial-text">Whitepate is designed as a collaboration tool for businesses that is
+                            a full project management solution.</p>
+                        <div class="line"></div>
+                        <div class="client-info">
+                            <img src="./images/Avater2.png" alt="client">
+                            <div>
+                                <h4>Oberon Shaw, MCH</h4>
+                                <span>Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card blue">
+                        <div class="quote"></div>
+                        <p class="testimonial-text">Whitepate is designed as a collaboration tool for businesses that is
+                            a full project management solution.</p>
+                        <div class="line"></div>
+                        <div class="client-info">
+                            <img src="./images/Avater3.png" alt="client">
+                            <div>
+                                <h4>Oberon Shaw, MCH</h4>
+                                <span>Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card active">
+                        <div class="quote2"></div>
+                        <p class="testimonial-text">Whitepate is designed as a collaboration tool for businesses that is
+                            a full project management solution.</p>
+                        <div class="line"></div>
+                        <div class="client-info">
+                            <img src="./images/Avater1.png" alt="client">
+                            <div>
+                                <h4>Oberon Shaw, MCH</h4>
+                                <span>Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card blue">
+                        <div class="quote"></div>
+                        <p class="testimonial-text">Whitepate is designed as a collaboration tool for businesses that is
+                            a full project management solution.</p>
+                        <div class="line"></div>
+                        <div class="client-info">
+                            <img src="./images/Avater2.png" alt="client">
+                            <div>
+                                <h4>Oberon Shaw, MCH</h4>
+                                <span>Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card blue">
+                        <div class="quote"></div>
+                        <p class="testimonial-text">Whitepate is designed as a collaboration tool for businesses that is
+                            a full project management solution.</p>
+                        <div class="line"></div>
+                        <div class="client-info">
+                            <img src="./images/Avater3.png" alt="client">
+                            <div>
+                                <h4>Oberon Shaw, MCH</h4>
+                                <span>Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dots">
+                <span class="dot active-dot" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-11">
+        <div class="container">
+
+            <h2 class="cta-title">
+                Try Whitepace <br class="d_break"> today
+            </h2>
+
+            <p class="cta-subtitle">
+                Get started for free. <br>
+                Add your whole team as your needs grow.
+            </p>
+
+            <a href="#" class="cta-btn">
+                Try Taskey free
+            </a>
+
+            <p class="cta-contact">
+                On a big team? <span>Contact sales</span>
+            </p>
+
+            <div class="cta-icons">
+                <i class="fa-brands fa-apple"></i>
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-android android-icon"></i>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-col logo-col">
+                    <img src="./images/Logo.png" alt="logo.png">
+                    <p>
+                        whitepace was created for the new ways we live and work.
+                        We make a better workspace around the world
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#" class="active">Overview</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Customer stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Guides & tutorials</a></li>
+                        <li><a href="#">Help center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Media kit</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-cta">
+                    <h3>Try It Today</h3>
+                    <p>Get started for free. Add your whole team as your needs grow.</p>
+                    <a href="#" class="footer-btn">Start today </a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="left">
+                    <div class="licon">
+                        <div class="img">
+                            <img src="./images/Icon.png" alt="icon.png">
+                        </div>
+                        <span> English &nbsp; ⌵</span>
+                    </div>
+                    <a href="#">Terms & privacy</a>
+                    <a href="#">Security</a>
+                    <a href="#">Status</a>
+                    <span>©2021 Whitepace LLC.</span>
+                </div>
+
+                <div class="right">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
